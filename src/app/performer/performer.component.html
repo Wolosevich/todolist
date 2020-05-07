@@ -1,0 +1,14 @@
+<ul>
+  <li *ngFor="let performer of performersService.performers; let i = index">
+    <span>
+      {{ i + 1 }}
+      {{ performer.name }}
+    </span>
+    <span>
+      <button class="performerEdit">Edit</button>
+      <button class="performerDelete" (click)="removePerformer(performer.id)">
+        &times;
+      </button>
+    </span>
+  </li>
+</ul>

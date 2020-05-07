@@ -1,0 +1,19 @@
+<div>
+  <form [formGroup]="form" (ngSubmit)="addTask()">
+    <input
+      type="text"
+      class="newTask"
+      placeholder="New task"
+      formControlName="title"
+    />
+    <input
+      type="text"
+      class="deadline"
+      placeholder="Deadline"
+      formControlName="deadline"
+    />
+    <button type="submit" class="addTask" [disabled]="form.invalid">
+      Add task
+    </button>
+  </form>
+</div>

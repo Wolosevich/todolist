@@ -1,0 +1,14 @@
+<div>
+  <form [formGroup]="form" (ngSubmit)="addPerformer()">
+    <input
+      type="text"
+      class="newPerformer"
+      placeholder="New performer"
+      formControlName="name"
+    />
+
+    <button type="submit" class="addPerformer" [disabled]="form.invalid">
+      Add performer
+    </button>
+  </form>
+</div>

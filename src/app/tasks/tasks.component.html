@@ -1,0 +1,19 @@
+<ul>
+  <li *ngFor="let task of tasksService.tasks; let i = index">
+    <span [class.done]="task.completed">
+      <input
+        type="checkbox"
+        [checked]="task.completed"
+        (change)="onChange(task.id)"
+      />
+      {{ i + 1 }}
+      {{ task.title }}
+
+      <small>{{ task.deadline }}</small>
+    </span>
+    <span>
+      <button class="taskEdit">Edit</button>
+      <button class="taskClose" (click)="removeTask(task.id)">&times;</button>
+    </span>
+  </li>
+</ul>

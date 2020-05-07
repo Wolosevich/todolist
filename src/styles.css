@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 600px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+}
+li {
+  font-size: 20px;
+  position: relative;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  margin-right: 16px;
+}
+small {
+  position: absolute;
+  right: 40px;
+  bottom: 8px;
+  font-size: 18px;
+  margin-right: 40px;
+}
+.taskClose {
+  background-color: red;
+  color: azure;
+}
+.taskEdit {
+  background-color: goldenrod;
+  color: azure;
+}
+.done {
+  text-decoration: line-through;
+}
